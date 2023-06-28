@@ -1,0 +1,222 @@
+<!-- HTML文件 ctr+shift+/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 字集编码 -->
+    <meta charset="utf-8">
+    <!-- 设置浏览器兼容 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焦点访谈：中国�?�谈 新思想�??实大国底�??</title>
+
+    <!-- 方式2：内嵌样�?? 针�?�当前页�??�??选中的h级标签中的字�?? -->
+    <!-- 选择�??：标�??(h几、span、a)选择�??，类(.class)选择�??�??#id选择�?? 优先级依次递�??-->
+   <style>
+        h1{
+            color:#4D4F53;
+        }
+        span{
+            color:#968D92;
+        }
+        .cls{
+            color:aqua;
+        }
+        #time{
+            color:blue;
+            font-size: 12px;  /* px�??像素单位 */
+        }
+        /* 设置超链接字�?? */
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        /* 设置盒子 */
+        #center{
+            width: 65%;
+            /*margin:0% 17.5% 0% 17.5%;*/
+            margin:0 auto; /*�??动居�??简�??*/
+        }
+        /* 设置段落文字属�? */
+        p{
+            text-indent: 35px;  /* 首�?�缩�?? */
+            line-height: 40px;  /* 段落行高 */
+        }
+        #plast{
+            text-align: right;  /* 文字靠右对齐 */
+        }
+    </style> 
+
+    <!-- 方式3：�?�联样式 蒋内嵌样式中的代码块单独写到css文件�??，再link链接进来-->
+    <!-- <link rel="stylesheet" href="../css/news.css"> -->
+
+    <!-- 直接通过网络路径加载vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+
+    <!-- 直接通过网络路径加载axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <!-- �??以通过设置div的�?�高，盒子模�?? -->
+    <div id="center">
+        <!-- src：路径可以使用本地�?�盘�??径，也可以使用网络路�?? -->
+        <!-- width和height一�??值�?�置一�??，另一�??会等比放大，也可以用百分比指�??80% -->
+        <img src="https://p5.ssl.qhimgs1.com/sdr/400__/t0156990dc631319a0f.png" width="8%"><a href="https://finance.sina.com.cn" target="_self">新浪政务</a>>正文
+
+        <!-- �??改字体样式，字体颜色有关�??词red，rbg(0,0,0)，十�??进制#000000三�?�表示方�?? -->
+
+        <!-- 方式1 ：�?�内样式 �??针�?�当前�?�有�??-->
+        <!-- <h1 style="color:red;">焦点访谈：中国�?�谈 新思想�??实大国底�??</h1> -->
+        <h1><a href="https://finance.sina.com.cn/jjxw/2023-03-03/doc-imyiqhav4405920.shtml" target="_blank">焦点访谈：中国�?�谈 新思想�??实大国底�??</a></h1>
+
+        <hr>
+        <!-- 由于�??2023�??03�??02�?? 21:50 �??视网”没有标签，所以可用span空标�??(无�??义标�??)为其指定匿名 -->
+        <!-- a表示超链接标�?? -->
+        <span class="cls" id="time">2023�??03�??02�?? 21:50</span> <span><a href="https://www.shobserver.com/staticsg/res/html/web/newsDetail.html?id=588354" target="_blank">�??视网</a></span>
+        <hr>
+        
+        <!-- 视�?�标签video -->
+        <video src="https://finance.sina.com.cn/jjxw/2023-03-03/doc-imyiqhav4405920.shtml?hasPlayedTime=7.765272" controls width="100%"></video>
+        <!-- 音�?�标签audio -->
+        <audio src="https://finance.sina.com.cn/jjxw/2023-03-03/doc-imyiqhav4405920.shtml"></audio>
+        <!-- 段落标�?�p 不同的�?�落标�?�之间会�??动换�??-->
+        <!-- 文字�?�??�标签br -->
+        <!-- 文字加粗标�?�b -->
+        <!-- 文字强调标�?�strong -->
+        <p>
+            <b>�??视网消息</b>（焦点�?�谈）：党的十八大以来，以习近平同志为核心的党中�??始终把解决粮食安全问题作为治国理政的头等大事，重农抓�??一系列政策举措有力有效，我国粮食产量站�??1.3万亿斤台阶，实现谷物基本�??给、口�??绝�?�安�?�??
+            我们把饭碗牢�?�???在自己手�??，为保障经济社会发展提供了坚实支撑，为应对各种�?�险挑战赢得了主动。连�??�??�??1.3万亿斤，这个沉甸甸的数据�??如何取得的呢�??
+            <br>
+            <br>
+            人勤春来早，春耕农事忙。立春之后，由南到北，我国春耕春管工作陆�??展开，春天的田野处�?�生机盎然�?
+        </p>
+        <p id="plast">
+            责任编辑：XXX
+        </p>
+
+        <!-- butten按钮属�? -->
+        <input type="checkbox" name="hobby"> 电影
+        <input type="checkbox" name="hobby"> 旅游
+        <input type="checkbox" name="hobby"> 游戏
+
+        <!-- 内部js脚本 -->
+<!--         <script>
+            alert('hello.js');
+        </script> -->
+        <!-- 外部js脚本 -->
+        <script src="../js/demo.js"></script>
+    </div>
+
+    <div>
+        <table border="lpx" cellspacing="0" width="600px" id="tab">
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>sex</th>
+                <th>hobby</th>
+            </tr>
+            <tr align="center" v-bind="user">
+                <td v-on:click="handle()" id="name" style="color:black">{{user.name}}</td>
+                <td>{{user.age}}</td>
+                <td>{{user.sex}}</td>
+                <td>{{user.hobby}}</td>
+            </tr>
+        </table>
+        <input type="button" value="axios获取数据" onclick="get()">
+    </div>
+
+    <script>
+        /* 定义函数不需要数�??类型，js会自动转换数�??类型，不用自己指明数�??类型 */
+        function add(a,b){
+            return a+b;
+        }
+        var result=add(10,20);
+        document.write(result);
+
+        /* 数组的完成定义var arr=new Array(1,2,3,4); */
+        var arr=[1,2,3,4];
+        console.log(arr[1]);
+        /* js�??的数组长度和类型都是�??变的 */
+        arr[10]="abc";
+        /* js数组遍历：for(){}遍历数组�??每一�??元素 */
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        /* 遍历数组�??有值元�?? */
+        arr.forEach(function(e){console.log(e);})
+        /* 向数组中添加元素 */
+        arr.push(7,8,9);
+        /* 删除数组元素 从�??0�??元素开始删�??3�??*/
+        arr.splice(0,3);
+        alert(parseInt("123ab12")); //123 将字符串�??�??为数字类�??
+
+        /* js对象与json字�?�串的相互转�?? */
+        var user={
+            name:"name",
+            age:10,
+            gender:"male",
+            eat:function(){
+                console.log("吃饭");
+            }
+        }
+        var jsonstr='{"name":"name","age":10,"gender":"male","arr":["上海","北京","深圳"]}';
+        /* json字�?�串-->js对象 */
+        var obj=JSON.parse(jsonstr);
+        alert(obj.name);
+        /* js对象-->json字�?�串 */
+        alert(JSON.stringify(user));
+        
+        /* window对象 */
+        //confirm对话�?? �??�?? 取消
+        var flag=confirm("您确认删除�?�录吗？");
+        alert(flag);
+        //周期性执行一�??函数
+        var i=0;
+        setInterval(function(){
+            i++;
+            console.log("定时器执行了"+i+"�??");
+        },2000)
+        //延时执�?�一�??函数
+        setTimeout(function(){
+            alert("JS");
+        },3000)
+        //获取或�?�置并跳�??地址栏信�??
+        alert(location.href);
+        //location.href="https://www.itcast.cn";
+
+        /* js根据标�?�、class类、id、name属性获取操作html元素数组 */
+        /*document.getElementByTagName()、document.getElementByClassName()、document.getElementById()、document.getElementByName()*/
+        /*再根�??获取的元素属性操作html*/
+        var author=document.getElementById("plast");
+        author.innerHTML=author.innerHTML.substring(0,5)+"<font color='red'>周星�??</font>"; //对某一条文字属性可直接用font标�??
+
+        new Vue({
+            el:"#tab",
+            data:{
+                user:{
+                    name:"mack",
+                    age:20,
+                    sex:"female",
+                    hobby:["可乐","厕所","烫头"]
+                },
+                emps:[]
+            },
+            methods: {
+                handle:function(){
+                    document.getElementById("name").style.color="red";
+                }
+            },
+            //mounted函数会在创建Vue时自动执行且只执行一次
+            mounted() {
+                //匿名对象中的this指针
+                axios.get("http://yapi.smart-xwork.cn/mock/169327/emp/list").then(result=>{this.emps=result.data.data})
+            },
+        })
+
+        function get(){
+            axios({
+            method:"get",
+            url:"http://yapi.smart-xwork.cn/mock/169327/emp/list"
+            }).then(result=>{console.log(result)}) //.then中是Lambda定义的回调函数，获取的参数用形参result接受，result获取的是一个object对象，result.data表示接受的所有数据
+        }
+
+    </script>
+</html>
